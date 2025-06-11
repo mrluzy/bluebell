@@ -1,0 +1,22 @@
+name: bluebell
+host: 127.0.0.1:8088
+startTime: "2024-09-09"
+machineID: 1
+
+log:
+  level: debug
+  filename: 'logs/bluebell.log'
+  maxSize: 200
+  maxAge: 30
+  maxBackups: 7
+  isConsolePrint: true
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: root1234
+  dbname: bluebell
+
+redis:
+  addr: 127.0.0.1:6379

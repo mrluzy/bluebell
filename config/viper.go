@@ -47,6 +47,6 @@ func getRelativePathCaller() (relPath string, err error) {
 	// 	获取当前函数所在文件的绝对路径
 	_, filename, _, _ := runtime.Caller(0)
 	relPath, err = filepath.Rel(callerPwd, filepath.Dir(filename))
-	fmt.Printf("caller from %s, here is %s, relpath is %s", callerPwd, filename, relPath)
+	fmt.Printf("caller from %s, here is %s, relpath is %s\n", callerPwd, filename, relPath)
 	return
 }
